@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-int main() {
-    guessNumber(500);
-    guessNumber(600);
-    guessNumber(555);
-}
-
-
 void guessNumber(int guess) {
     if (guess < 555) {
       printf("Your guess is too low.\n");
@@ -15,4 +8,10 @@ void guessNumber(int guess) {
     } else {
       printf("Correct. You guessed it!\n");
     }
+}
+
+int main() {
+    guessNumber(500);
+    guessNumber(600);
+    guessNumber(555);
 }
