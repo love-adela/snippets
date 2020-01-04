@@ -3,13 +3,13 @@ import secrets
 import string
 import argon2
 
-def random_string(length=16):
+def random_string(length=24):
     letters = string.ascii_letters
     numbers = string.digits
     return ''.join(secrets.choice(letters+numbers) for i in range(length))
 
 
-def get_salt(length=16):
+def get_salt(length=24):
     letters = string.ascii_letters
     numbers = string.digits
     salt = ''.join(secrets.choice(letters+numbers) for i in range(length))
