@@ -10,7 +10,7 @@ int main() {
   strcpy(str, "adela");
   printf("String = %s, Address = %p\n", str, str);
 
-  /* Reallocating memory */
+  /* Reallocating memory: 크기를 늘리거나 줄인다. */
   str = (char *) realloc(str, 17);
   strcat(str, ".love");
   printf("String = %s, Address = %p\n", str, str);
