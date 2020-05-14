@@ -15,7 +15,7 @@ def get_salt(length=24):
     salt = ''.join(secrets.choice(letters+numbers) for i in range(length))
     return salt
 
-salt = get_salt()
+salt = get_salt(16)
 print(salt)
 print(argon2.argon2_hash('1234', salt).hex())
 
