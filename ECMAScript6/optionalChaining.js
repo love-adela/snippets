@@ -7,8 +7,7 @@ const adventurer = {
 };
 
 const dogName = adventurer.dog?.name;
+// expected output: undefined
 console.log(dogName);
 // expected output: undefined
-
 console.log(adventurer.someNonExistentMethod?.());
-// expected output: undefined
